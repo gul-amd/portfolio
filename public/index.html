@@ -1,88 +1,520 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/11.0.2/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/11.0.2/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/11.0.2/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/11.0.2/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/11.0.2/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/11.0.2/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/11.0.2/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/11.0.2/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/11.0.2/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/11.0.2/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <title>Gulamo Amade</title>
+<!--
+Reflux Template
+https://templatemo.com/tm-531-reflux
+-->
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="assets/css/templatemo-style.css" />
+    <link rel="stylesheet" href="assets/css/owl.css" />
+    <link rel="stylesheet" href="assets/css/lightbox.css" />
   </head>
+
   <body>
-    <div id="message">
-      <h2>Welcome Gulamo</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+    <div id="page-wraper">
+      <!-- Sidebar Menu -->
+      <div class="responsive-nav">
+        <i class="fa fa-bars" id="menu-toggle"></i>
+        <div id="menu" class="menu">
+          <i class="fa fa-times" id="menu-close"></i>
+          <div class="container">
+            <div class="image">
+              <a href="#"><img src="assets/images/author-image.jpg" alt="" /></a>
+            </div>
+            <div class="author-content">
+              <h4>Gulamo Amade</h4>
+              <span>Programador(IT)</span>
+            </div>
+            <nav class="main-nav" role="navigation">
+              <ul class="main-menu">
+                <li><a href="#section1">Perspectiva</a></li>
+                <li><a href="#section2">Especialidade</a></li>
+                <li><a href="#section3">Portfólio</a></li>
+                <li><a href="#section4">Vamos Conversar</a></li>
+              </ul>
+            </nav>
+            <div class="social-network">
+              <ul class="soial-icons">
+               <!-- <li>
+                  <a href="https://fb.com/templatemo"
+                    ><i class="fa fa-facebook"></i
+                  ></a>
+                </li> 
+                <li>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                </li> -->
+                <li>
+                  <a href="https://www.linkedin.com/in/gul-amd-moz/"><i class="fa fa-linkedin"></i></a>
+                </li>
+                <li>
+                  <a href="https://github.com/gul-amd"><i class="fa fa-github"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="copyright-text">
+              <p>Copyright 2024 Gulamo Amade</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="section about-me" data-section="section1">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Visão Geral</h2>
+            <div class="line-dec"></div>
+            <span>
+              Finalista em Engenharia Informática pela UnISCED, 
+              com experiência em desenvolvimento de aplicações web para mobile e desktop. 
+              Com formação prática na China em montagem de dispositivos tecnológicos pela EgoDevices,Ltd. 
+            </span
+            >
+          </div>
+          <div class="left-image-post">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="left-image">
+                  <img src="assets/images/left-image.jpg" alt="" />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="right-text">  
+                  <h4>Conheça-me</h4>
+                  <p>
+                    Residente em Manhiça, Maputo, Moçambique, e atuo como especialista em hardware, 
+                    desenvolvidor back-end, análista de dados e lider de equipes em operação. 
+                    A minha paixão é criar soluções eficientes e inovadoras.
+                  </p>
+                  <div class="white-button" role="navigation">
+                    <nav role="navigation">
+                      <a href="#section4" role="button">Fale Comigo</a>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="right-image-post">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="left-text">
+                  <h4>Meu objectivo</h4>
+                  <p>
+                    Atuar em áreas relacionadas à ciência de dados e 
+                    sistemas distribuídos, com foco no desenvolvimento de aplicações web robustas 
+                    e escaláveis. Aspiro a especializar-me na coleta, armazenamento 
+                    e processamento eficiente de dados, utilizando tecnologias avançadas 
+                    para criar soluções inovadoras que impactem positivamente as organizações. 
+                    Além disso, desejo continuar evoluindo tanto como líder de equipes quanto como 
+                    especialista técnico, equilibrando minha paixão por inovação com a 
+                    capacidade de gerenciar e motivar equipes rumo ao sucesso.
+                  </p>
+                  <!--
+                  <div class="white-button">
+                  <a href="#">Read More</a>
+                  </div>
+                  -->
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="right-image">
+                  <img src="assets/images/right-image.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section my-services" data-section="section2">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Habilidades</h2>
+            <div class="line-dec"></div>
+            <span>
+              experiência em desenvolvimento back-end utilizando tecnologias como PHP (Laravel), 
+              Java e Vue.js, além de conhecimentos básicos de front-end com HTML, CSS e JavaScript. 
+              Competências práticas em montagem, manutenção, diagnóstico e reparação de hardware, 
+              além de experiência em visualização de dados e aprendizado contínuo em ciência de dados 
+              e sistemas distribuídos. Fluente na lingua inglêsa, a minha abordagem profissional é marcada por 
+              liderança, trabalho em equipe e resolução de problemas.
+            </span>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="service-item">
+                <div class="first-service-icon service-icon"></div>
+                <h4>Front-end</h4>
+                <p>
+                  O pilar do desenvolvimento web, como HTML e CSS
+                  que fornecem as bases para criação de interfaces funcionais e atrativas. 
+                  De acordo com os padrões atuais do mercado.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="service-item">
+                <div class="second-service-icon service-icon"></div>
+                <h4>Back-end</h4>
+                <p>
+                  Desenvolvendo APIs robustas e escaláveis para aplicações web e distribuídas. 
+                  envolvendo práticas como gerenciamento de servidores.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="service-item">
+                <div class="third-service-icon service-icon"></div>
+                <h4>Gestão e liderança</h4>
+                <p>
+                  Fundamentais para o sucesso de qualquer equipe e projeto. Baseado na
+                  motivação, resolução de problemas e tomada de decisões estratégicas.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="service-item">
+                <div class="fourth-service-icon service-icon"></div>
+                <h4>Analise de dados</h4>
+                <p>
+                  o coração da maioria das aplicações, responsáveis por armazenar, 
+                  organizar e disponibilizar informações de maneira eficiente e segura
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section my-work" data-section="section3">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Experiencias</h2>
+            <div class="line-dec"></div>
+            <span>
+              Desenvolvimento de aplicações web utilizando Vue.js e Laravel, 
+              focando na criação de soluções escaláveis e otimizadas para uma 
+              excelente experiência do usuário. Trabalhei em projetos que 
+              resultaram em melhorias significativas na satisfação do cliente, 
+              graças à implementação de ambientes UI/UX aprimorados. Além disso, 
+              colaborei com diferentes equipes em iniciativas que aplicaram minhas 
+              habilidades tanto em back-end quanto front-end, gerando resultados mais rápidos 
+              e eficientes para os usuários finais.
+            </span
+            >
+          </div>
+          <div class="row">
+            <div class="isotope-wrapper">
+              <form class="isotope-toolbar">
+                <label
+                  ><input
+                    type="radio"
+                    data-type="*"
+                    checked=""
+                    name="isotope-filter"
+                  />
+                  <span>Todos</span></label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    data-type="people"
+                    name="isotope-filter"
+                  />
+                  <span>Ferramentas</span></label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    data-type="nature"
+                    name="isotope-filter"
+                  />
+                  <span>Paginas</span></label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    data-type="animals"
+                    name="isotope-filter"
+                  />
+                  <span>Aplicações</span></label
+                >
+              </form>
+              <div class="isotope-box">
+                <div class="isotope-item" data-type="nature">
+                  <figure class="snip1321">
+                    <img
+                      src="assets/images/portfolio-01.jpg"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <a
+                        href="assets/images/portfolio-01.jpg"
+                        data-lightbox="image-1"
+                        data-title="Caption"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4>Pagina da VESTE</h4>
+                      <span>Projecto desenvolvido com Laravel</span>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="isotope-item" data-type="people">
+                  <figure class="snip1321">
+                    <img
+                      src="assets/images/portfolio-02.jpg"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <a
+                        href="assets/images/portfolio-02.jpg"
+                        data-lightbox="image-1"
+                        data-title="Caption"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4>VUE.js</h4>
+                      <span>Uma Framework JavaScript</span>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="isotope-item" data-type="animals">
+                  <figure class="snip1321">
+                    <img
+                      src="assets/images/portfolio-03.jpg"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <a
+                        href="assets/images/portfolio-03.jpg"
+                        data-lightbox="image-1"
+                        data-title="Caption"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4>Mobile App</h4>
+                      <span>Desenvolvida com framework VUE.js</span>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="isotope-item" data-type="people">
+                  <figure class="snip1321">
+                    <img
+                      src="assets/images/portfolio-04.jpg"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <a
+                        href="assets/images/portfolio-04.jpg"
+                        data-lightbox="image-1"
+                        data-title="Caption"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4>Laravel</h4>
+                      <span>Framework da linguagem PHP</span>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="isotope-item" data-type="nature">
+                  <figure class="snip1321">
+                    <img
+                      src="assets/images/portfolio-05.jpg"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <a
+                        href="assets/images/portfolio-05.jpg"
+                        data-lightbox="image-1"
+                        data-title="Caption"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4>Portfolio</h4>
+                      <span>Desenvolvido com framework Laravel</span>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="isotope-item" data-type="animals">
+                  <figure class="snip1321">
+                    <img
+                      src="assets/images/portfolio-06.jpg"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <a
+                        href="assets/images/portfolio-06.jpg"
+                        data-lightbox="image-1"
+                        data-title="Caption"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4>Back-end</h4>
+                      <span>Aprimoramenoto da API para uma aplicação</span>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="section4" class="section contact-me" data-section="section4">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Entre em Contacto</h2>
+            <div class="line-dec"></div>
+            <span>
+              Estou sempre aberto a novas oportunidades e parcerias! <br/>
+              Se tiver algum projeto em mente, precisar de mais informações 
+              ou quiser discutir como podemos colaborar, <br/> não hesite em entrar em contato.
+              </span>
+          </div>
+          <div class="row">
+            <div class="right-content">
+              <div class="container">
+                <form id="contact" action="send_email.php" method="post">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <fieldset>
+                        <input
+                          name="name"
+                          type="text"
+                          class="form-control"
+                          id="name"
+                          placeholder="Seu Nome e Sobrenome"
+                          required=""
+                        />
+                      </fieldset>
+                    </div>
+                    <div class="col-md-6">
+                      <fieldset>
+                        <input
+                          name="email"
+                          type="text"
+                          class="form-control"
+                          id="email"
+                          placeholder="Seu email..."
+                          required=""
+                        />
+                      </fieldset>
+                    </div>
+                    <div class="col-md-12">
+                      <fieldset>
+                        <input
+                          name="subject"
+                          type="text"
+                          class="form-control"
+                          id="subject"
+                          placeholder="Assunto..."
+                          required=""
+                        />
+                      </fieldset>
+                    </div>
+                    <div class="col-md-12">
+                      <fieldset>
+                        <textarea
+                          name="message"
+                          rows="6"
+                          class="form-control"
+                          id="message"
+                          placeholder="A sua mensagem vai aqui..."
+                          required=""
+                        ></textarea>
+                      </fieldset>
+                    </div>
+                    <div class="col-md-12">
+                      <fieldset>
+                        <button type="submit" id="form-submit" class="button">
+                          Enviar mensagem
+                        </button>
+                      </fieldset>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
 
+    <!-- Scripts -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/custom.js"></script>
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+      //according to loftblog tut
+      $(".main-menu li:first").addClass("active");
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+      var showSection = function showSection(section, isAnimate) {
+        var direction = section.replace(/#/, ""),
+          reqSection = $(".section").filter(
+            '[data-section="' + direction + '"]'
+          ),
+          reqSectionPos = reqSection.offset().top - 0;
+
+        if (isAnimate) {
+          $("body, html").animate(
+            {
+              scrollTop: reqSectionPos
+            },
+            800
+          );
+        } else {
+          $("body, html").scrollTop(reqSectionPos);
         }
+      };
+
+      var checkSection = function checkSection() {
+        $(".section").each(function() {
+          var $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+          if (topEdge < wScroll && bottomEdge > wScroll) {
+            var currentId = $this.data("section"),
+              reqLink = $("a").filter("[href*=\\#" + currentId + "]");
+            reqLink
+              .closest("li")
+              .addClass("active")
+              .siblings()
+              .removeClass("active");
+          }
+        });
+      };
+
+      $(".main-menu").on("click", "a", function(e) {
+        e.preventDefault();
+        showSection($(this).attr("href"), true);
+      });
+
+      $(window).scroll(function() {
+        checkSection();
       });
     </script>
   </body>
